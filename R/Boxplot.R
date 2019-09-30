@@ -52,7 +52,7 @@ BoxPlotsPlot <- function(bdat, att, att_color){
                                  panel.grid.major = element_blank(),
                                  axis.title.x = element_blank())
                          + geom_boxplot(data = bdat, aes_string(x="x", y="attribute"),
-                                        fill = att_color, colour = "gray80"),
+                                        fill = att_color, colour = "gray80")
                          + geom_dotplot(binaxis = 'y', stackdir = 'center'))
   return(boxplots)
 }
